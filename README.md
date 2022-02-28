@@ -76,7 +76,6 @@ To run this SPA, install it locally using npm and run API on a separate terminal
 
 ```
 $ npm install
-$ npm run server
 $ npm start
 ```
 
