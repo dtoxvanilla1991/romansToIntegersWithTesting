@@ -1,4 +1,4 @@
-import romanToInt from './romToInt';
+import romanToInt from './romToInt.js';
 
 const romanInput = document.getElementById("1");
 const decimalValue = document.getElementById("2");

@@ -1,4 +1,4 @@
-function romanToInt (s) {
+export default function romanToInt (s) {
     //here we are going to set up all roman letters with exceptions as separate objects so that later I can loop over the input and check for each:
     const romans = {
         "I": 1,
@@ -31,6 +31,4 @@ function romanToInt (s) {
     //output:
     return answer;
 }
-console.log(romanToInt("LVIII"));
-
-module.exports = romanToInt;
+//console.log(romanToInt("LVIII"));
