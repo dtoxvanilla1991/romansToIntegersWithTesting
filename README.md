@@ -76,7 +76,7 @@ To run this SPA, install it locally using npm and run API on a separate terminal
 
 ```
 $ npm install
-$ npm start
+$ open with live server
 ```
 
 <!-- CONTACT -->

@@ -1,15 +1,5 @@
-const romanInput = document.getElementById("1");
-const decimalValue = document.getElementById("2");
-const buttonConvert = document.getElementById("3");
-
-buttonConvert.addEventListener("click",(e)=>{
-    e.preventDefault();
-    decimalValue.innerHTML = romanToInt(romanInput.value);
-
-});
-
-var romanToInt = function(s) {
-    //declaring variables:
+function romanToInt (s) {
+    //here we are going to set up all roman letters with exceptions as separate objects so that later I can loop over the input and check for each:
     const romans = {
         "I": 1,
         "V": 5,
@@ -28,7 +18,7 @@ var romanToInt = function(s) {
         "CM": 900        
     };
     let i = 0, answer = 0;
-    //looping:
+    //looping through through each input letter and checking if it exists as a key in the exceptions first, else going for normal roman letters:
     while(i<s.length) {
         if(exceptions[s[i]+s[i+1]]){
             answer += exceptions[s[i]+s[i+1]];
@@ -40,5 +30,7 @@ var romanToInt = function(s) {
     }
     //output:
     return answer;
-};
+}
 console.log(romanToInt("LVIII"));
+
+module.exports = romanToInt;
